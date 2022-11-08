@@ -87,7 +87,7 @@ public class TugasJavaBasic {
                                 System.out.println("Jari-Jari :");
                                 jari = sc.nextInt();
     
-                                System.out.println("Hasilnya : " + (22*jari*jari /7) + " m²");
+                                System.out.println("Hasilnya : " + (22* jari*jari /7) + " m²");
                                 break;
                             }
                         } while ( luas < 5);
@@ -134,7 +134,6 @@ public class TugasJavaBasic {
                     
                 } while ( menu1 < 3);
                 break; 
-    
                 case 2:
                 System.out.println("Menu 2");
                 int menu2 = 1;
@@ -347,28 +346,31 @@ public class TugasJavaBasic {
                     System.out.println(" Silahkan Pilih Menu Rahasia ");
                     int menu3 = 1;
                     do {
-                        System.out.println("Silahkan Pilih : \n 1.  Uppercase \n 2. Lowercase \n 3. Reverse \n 4. Exit");
+                        System.out.println("Silahkan Pilih : \n 1. Uppercase \n 2. Lowercase \n 3. Reverse \n 4. Exit");
                         menu3 = sc.nextInt();
                         switch (menu3) {
                             case 1:
                             String mimi;
                             System.out.println("Uppercase");
+                            sc.nextLine();
                             System.out.println("Masukkan Data");
-                            mimi = sc.next();
+                            mimi = sc.nextLine();
                             System.out.println(mimi.toUpperCase());
                             break;
                             case 2:
                             String MOO;
                             System.out.println("Lowercase");
+                            sc.nextLine();
                             System.out.println("Masukkan Data");
-                            MOO = sc.next();
+                            MOO = sc.nextLine();
                             System.out.println(MOO.toLowerCase());
                             break;
                             case 3:
                             String miii;
                             System.out.println("Reverse");
+                            sc.nextLine();
                             System.out.println("Masukkan Data");
-                            miii = sc.next();
+                            miii = sc.nextLine();
                             List<String> list = Arrays.asList(miii.split(""));
                             Collections.reverse(list);
                             System.out.println(
@@ -383,7 +385,7 @@ public class TugasJavaBasic {
                 }
             }
         }  while (number < 4);   
-        System.out.println("Anda Sudah Keluar !!");
+        System.out.println("Anda Sudah Keluar !!!");
     } else {
         System.out.println("Akses Ditolak");
         sc.close();
