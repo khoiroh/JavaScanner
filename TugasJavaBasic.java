@@ -236,6 +236,7 @@ public class TugasJavaBasic {
                             }
                         } while ( derajat < 4);
                         break;
+                        // menu panjang
                         case 2:
                         System.out.println("Panjang (Meter)");
                         int panjang = 1;
