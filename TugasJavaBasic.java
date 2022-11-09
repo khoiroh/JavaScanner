@@ -159,7 +159,7 @@ public class TugasJavaBasic {
                                 System.out.println("celcius");
                                 int celcius = 1;
                                 do {
-                                    int C;
+                                    Float C;
                                     System.out.println("Pilihlah : \n 1. Celcius ke Reamur \n 2. Celcius ke Fahrenheit \n 3. Exit");
                                     celcius = sc.nextInt();
                                     System.out.println("Massukan Pilihan : " + celcius);
@@ -167,14 +167,14 @@ public class TugasJavaBasic {
                                     switch (celcius) {
                                         case 1:                                   
                                         System.out.println("Celcius ke Reamur :");
-                                        C = sc.nextInt();
+                                        C = sc.nextFloat();
     
                                         System.out.println("Hasilnya : " + (4*C /5) + " °R");
                                         break;
     
                                         case 2: 
                                         System.out.println("Celcius ke Fahrenheit :");
-                                        C = sc.nextInt();
+                                        C = sc.nextFloat();
     
                                         System.out.println("Hasilnya : " + ((C *9/5) + 32) + " °F");
                                         break;
@@ -185,7 +185,7 @@ public class TugasJavaBasic {
                                 System.out.println("Reamur");
                                 int reamur =1;
                                 do {
-                                    int R;
+                                    Float R;
                                     System.out.println("Pilihlah : \n 1. Reamur ke Celcius \n 2. Reamur ke Fahrenheit \n 3. Exit");
                                     reamur = sc.nextInt();
                                     System.out.println("Masukkan Pilihan :" + reamur);
@@ -193,14 +193,14 @@ public class TugasJavaBasic {
                                     switch (reamur) {
                                         case 1:
                                         System.out.println("Reamur ke Celcius");
-                                        R = sc.nextInt();
+                                        R = sc.nextFloat();
     
                                         System.out.println("Hasilnya : " + (5 * R /4 ) + " °C");
                                         break;
     
                                         case 2:
                                         System.out.println("Reamur ke Fahrenheit");
-                                        R = sc.nextInt();
+                                        R = sc.nextFloat();
     
                                         System.out.println("Hasilnya :" + ((R* 9 / 4) + 32) + " °F");
                                         break;
@@ -212,7 +212,7 @@ public class TugasJavaBasic {
                                 System.out.println("Fahrenheit");
                                 int fahrenheit = 1;
                                 do {
-                                    int F;
+                                    Float F;
                                     System.out.println("Pilihlah : \n 1. Fahrenheit ke Celcius \n 2. Fahrenheit ke Reamur \n 3. Exit");
                                     fahrenheit = sc.nextInt();
                                     System.out.println("Masukkan Pilihan :" + fahrenheit);
@@ -220,15 +220,15 @@ public class TugasJavaBasic {
                                     switch (fahrenheit) {
                                         case 1: 
                                         System.out.println("Fahrenheit ke Celcius");
-                                        F = sc.nextInt();
+                                        F = sc.nextFloat();
     
-                                        System.out.println("Hasilnya :" + ((F - 32) * 5 /9) + " °C");
+                                        System.out.println("Hasilnya :" + (5 *(F - 32) /9) + " °C");
                                         break;
                                         case 2:
                                         System.out.println("Fahrenheit ke Reamur");
-                                        F = sc.nextInt();
+                                        F = sc.nextFloat();
     
-                                        System.out.println("Hasilnya :" + (4 * F - 32 / 9) + " °R");
+                                        System.out.println("Hasilnya :" + (4 * (F - 32) / 9) + " °R");
                                         break;
                                     }
                                 } while (fahrenheit < 3);
