@@ -176,7 +176,7 @@ public class TugasJavaBasic {
                                         System.out.println("Celcius ke Fahrenheit :");
                                         C = sc.nextInt();
     
-                                        System.out.println("Hasilnya : " + (9* C + 32 / 5) + " °F");
+                                        System.out.println("Hasilnya : " + ((C *9/5) + 32) + " °F");
                                         break;
                                     }
                                 } while ( celcius < 3);
@@ -202,7 +202,7 @@ public class TugasJavaBasic {
                                         System.out.println("Reamur ke Fahrenheit");
                                         R = sc.nextInt();
     
-                                        System.out.println("Hasilnya :" + (9 * R + 32 / 4) + " °F");
+                                        System.out.println("Hasilnya :" + ((R* 9 / 4) + 32) + " °F");
                                         break;
                                     }
                                 } while (reamur < 3);
@@ -222,7 +222,7 @@ public class TugasJavaBasic {
                                         System.out.println("Fahrenheit ke Celcius");
                                         F = sc.nextInt();
     
-                                        System.out.println("Hasilnya :" + (F - 32 * 5 /9) + " °C");
+                                        System.out.println("Hasilnya :" + ((F - 32) * 5 /9) + " °C");
                                         break;
                                         case 2:
                                         System.out.println("Fahrenheit ke Reamur");
