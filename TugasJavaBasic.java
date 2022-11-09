@@ -195,7 +195,7 @@ public class TugasJavaBasic {
                                         System.out.println("Reamur ke Celcius");
                                         R = sc.nextInt();
     
-                                        System.out.println("Hasilnya : " + (5 / R /4 ) + " °C");
+                                        System.out.println("Hasilnya : " + (5 * R /4 ) + " °C");
                                         break;
     
                                         case 2:
@@ -240,46 +240,46 @@ public class TugasJavaBasic {
                         System.out.println("Panjang (Meter)");
                         int panjang = 1;
                         do {
-                            int meter;
+                            Float meter;
                             System.out.println("Silahkan pilih : \n 1. Kilometer \n 2. Hektometer \n 3. Dekameter \n 4. Desimeter \n 5. Centimeter \n 6. Milimeter \n 7. Exit");
                             panjang = sc.nextInt();
                             System.out.println("Masukkan Pilihan :" + panjang);
                             
                             switch (panjang) {
                                 case 1:
-                                System.out.println("KM");
+                                System.out.println("Kilometer");
                                 System.out.println("Masukkan Nilai (meter) =");
-                                meter = sc.nextInt();
+                                meter = sc.nextFloat();
                                 System.out.println("Hasil konverensi " + meter + "="+ (meter / 1000) + " km ");
                                 break; 
                                 case 2:
-                                System.out.println("HM");
+                                System.out.println("Hektometer");
                                 System.out.println("Masukkan Nilai (meter) =");       
-                                meter = sc.nextInt();
+                                meter = sc.nextFloat();
                                 System.out.println("Hasil konverensi " + meter + "=" + (meter / 100) + " hm ");   
                                 break;   
                                 case 3:
-                                System.out.println("dam");
+                                System.out.println("Dekameter");
                                 System.out.println("Masukkan Nilai (meter) =");       
-                                meter = sc.nextInt();
+                                meter = sc.nextFloat();
                                 System.out.println("Hasil konverensi " + meter + "=" + (meter / 10) + " dam ");   
                                 break;   
                                 case 4:
-                                System.out.println("dm");   
+                                System.out.println("Desimeter");   
                                 System.out.println("Masukkan Nilai (meter) =");   
-                                meter = sc.nextInt();
+                                meter = sc.nextFloat();
                                 System.out.println("Hasil konverensi " + meter + "=" +(meter * 10) + " dm ");
                                 break;
                                 case 5:
-                                System.out.println("cm");
+                                System.out.println("Centimeter");
                                 System.out.println("Masukkan Nilai (meter) =");
-                                meter = sc.nextInt();
+                                meter = sc.nextFloat();
                                 System.out.println("Hasil konverensi " + meter + "=" + (meter * 100) + " cm ");
                                 break;
                                 case 6:
-                                System.out.println("mm");
+                                System.out.println("Milimeter");
                                 System.out.println("Masukkan Nilai (meter) =");
-                                meter = sc.nextInt();
+                                meter = sc.nextFloat();
                                 System.out.println("Hasil konverensi " + meter + "=" + (meter * 1000) + " mm ");
                                 break;                                            
                             }
@@ -289,7 +289,7 @@ public class TugasJavaBasic {
                         System.out.println("Berat (Gram)");
                         int berat = 1;
                         do {
-                            int gram;
+                            Float gram;
                             System.out.println("Silahkan Pilih : \n 1. Kilogram \n 2. Hektogram \n 3. Dekagram \n 4. Desigram \n 5. Centigram \n 6. Miligram \n 7. Exit");
                             berat = sc.nextInt();
                             System.out.println("Masukkan Pilihan :" + berat);
@@ -297,37 +297,37 @@ public class TugasJavaBasic {
                                 case 1:
                                 System.out.println("Kilogram");
                                 System.out.println("Masukkan Nilai (Gram) ="); 
-                                gram = sc.nextInt();
+                                gram = sc.nextFloat();
                                 System.out.println("Hasil konverensi " + gram + "=" + (gram / 1000) + " kg ");
                                 break;
                                 case 2:
                                 System.out.println("Hektogram");
                                 System.out.println("Masukkan Nilai (Gram) ="); 
-                                gram = sc.nextInt();
+                                gram = sc.nextFloat();
                                 System.out.println("Hasil konverensi " + gram + "=" + (gram / 100) + " hg ");
                                 break;
                                 case 3:
                                 System.out.println("Dekagram");
                                 System.out.println("Masukkan Nilai (Gram) ="); 
-                                gram = sc.nextInt();
+                                gram = sc.nextFloat();
                                 System.out.println("Hasil konverensi " + gram + "=" + (gram / 10) + " dag ");
                                 break;
                                 case 4:
                                 System.out.println("Desigram");
                                 System.out.println("Masukkan Nilai (Gram) ="); 
-                                gram = sc.nextInt();
+                                gram = sc.nextFloat();
                                 System.out.println("Hasil konverensi " + gram + "=" + (gram * 10) + " dg ");
                                 break;
                                 case 5:
                                 System.out.println("Centigram");
                                 System.out.println("Masukkan Nilai (Gram) ="); 
-                                gram = sc.nextInt();
+                                gram = sc.nextFloat();
                                 System.out.println("Hasil konverensi " + gram + "=" + (gram * 100) + " cg ");
                                 break;
                                 case 6:
                                 System.out.println("Miligram");
                                 System.out.println("Masukkan Nilai (Gram) ="); 
-                                gram = sc.nextInt();
+                                gram = sc.nextFloat();
                                 System.out.println("Hasil konverensi " + gram + "=" + (gram * 1000) + " mg ");
                                 break;
                             }
@@ -350,31 +350,31 @@ public class TugasJavaBasic {
                         menu3 = sc.nextInt();
                         switch (menu3) {
                             case 1:
-                            String mimi;
+                            String upercase;
                             System.out.println("Uppercase");
                             sc.nextLine();
                             System.out.println("Masukkan Data");
-                            mimi = sc.nextLine();
-                            System.out.println(mimi.toUpperCase());
+                            upercase = sc.nextLine();
+                            System.out.println(upercase.toUpperCase());
                             break;
                             case 2:
-                            String MOO;
+                            String lowercase;
                             System.out.println("Lowercase");
                             sc.nextLine();
                             System.out.println("Masukkan Data");
-                            MOO = sc.nextLine();
-                            System.out.println(MOO.toLowerCase());
+                            lowercase = sc.nextLine();
+                            System.out.println(lowercase.toLowerCase());
                             break;
                             case 3:
-                            String miii;
                             System.out.println("Reverse");
                             sc.nextLine();
                             System.out.println("Masukkan Data");
-                            miii = sc.nextLine();
-                            List<String> list = Arrays.asList(miii.split(""));
+                            String reverse;
+                            reverse = sc.nextLine();
+                            List<String> list = Arrays.asList(reverse.split(" "));
                             Collections.reverse(list);
                             System.out.println(
-                                String.join("", list)
+                                String.join(" ", list)
                             );
                             break;
                         }
